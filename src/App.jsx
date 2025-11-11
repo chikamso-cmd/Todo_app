@@ -1,22 +1,29 @@
-import { useState } from 'react'
-import Login from './login';
-import Dashboard from "./Dashboard";
-import Registration from "./register";
-import { BrowserRouter } from 'react-router-dom';
-import './App.css'
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import {ErrorBoundary} from 'react-error-boundary'
+import Login from './components/login';
+import Registration from './components/register';
+import Dashboard from './components/dashboard';
+import './App.css';
 
-
+function ErrorFallback({error}) {
+  return <div> something went wrong: {error.message}</div>
+}
 
 function App() {
-  
-
   return (
-   <Routes>
-    <Route path="/login" element={<Login/>}/>
-    <Route path="/register" element={<Registration/>}/>
-    <Route path="/dashboard" element={<Dashboard/>}/>
-   </Routes>
-  );
 
+    <Registration />
+    // <ErrorBoundary FallbackComponent={ErrorFallback}>
+    //   <BrowserRouter>
+    //     <Routes>
+    //       <Route path='/register' element={<Registration />} />
+    //       <Route path='/login' element={<Login />} />
+    //       <Route path='/dashboard' element={<Dashboard />} />
+    //     </Routes>
+    //   </BrowserRouter>
+    // </ErrorBoundary>
+  );
 }
-export default App
+
+export default App;

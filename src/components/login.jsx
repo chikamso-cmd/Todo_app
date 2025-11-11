@@ -1,4 +1,4 @@
-
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
 
@@ -19,8 +19,9 @@ function Login() {
 
                     <button type="submit" id="login-btn" className="login-btn">
                     <span class="material-symbols-outlined">login</span>
-                    login</button>
-                    <p className="login"> don't have an account? <a href="./">create one</a></p>
+                   login 
+                    </button>
+                    <p className="login"> don't have an account?  register</p>
                 </form>
             </div>
             
