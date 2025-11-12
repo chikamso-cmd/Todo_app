@@ -38,7 +38,7 @@ function Login() {
                         <label htmlFor="password">password</label>
                         <a href="./"> forgot password</a>
                     </div>
-                    <input type="password" name="password" id="password" placeholder="choose a password" required value={password} />
+                    <input type="password" name="password" id="password" placeholder="choose a password" required value={password~} />
 
                     <button type="submit" id="login-btn" className="login-btn">
                         <span className="material-symbols-outlined">login</span>
