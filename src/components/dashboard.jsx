@@ -35,12 +35,12 @@ function Dashboard() {
       <div className="add-task-wrapper">
         <div className="add-task">
           <input
-          type="text"
-          name="todo"
-          id="add-todo"
-          placeholder="add a new task here"
+            type="text"
+            name="todo"
+            id="add-todo"
+            placeholder="add a new task here"
           />
-         
+
         </div>
         <div className="categories">
           {/* <label htmlFor="categories">categories</label> */}
@@ -59,20 +59,20 @@ function Dashboard() {
             <option value="high">high</option>
           </select>
           <button id="submit">
-            <span class="material-symbols-outlined">add</span>
+            <span className="material-symbols-outlined">add</span>
             add</button>
         </div>
-          
+
       </div>
       <div className="filter">
         <div className="icon">
           <input
-          type="search"
-          name="search"
-          id="search"
-          placeholder="search tasks..."
-        />
-        <span class="material-symbols-outlined">search</span>
+            type="search"
+            name="search"
+            id="search"
+            placeholder="search tasks..."
+          />
+          <span class="material-symbols-outlined">search</span>
         </div>
         {/* <label htmlFor="search-category">categories</label> */}
         <select id="search-category">
@@ -90,12 +90,12 @@ function Dashboard() {
             <h1>complete project for the week</h1>
             <div className="priority-category">
               <p className="category shopping">shopping</p>
-            <p className="priority high">high</p>
+              <p className="priority high">high</p>
             </div>
           </div>
           <div className="icons">
-            <span class="material-symbols-outlined">edit</span>
-            <span class="material-symbols-outlined">close</span>
+            <span className="material-symbols-outlined">edit</span>
+            <span className="material-symbols-outlined">close</span>
           </div>
         </div>
       </div>
@@ -106,12 +106,12 @@ function Dashboard() {
             <h1>complete project for the week</h1>
             <div className="priority-category">
               <p className="category work">work</p>
-            <p className="priority medium">medium</p>
+              <p className="priority medium">medium</p>
             </div>
           </div>
           <div className="icons">
-             <span class="material-symbols-outlined">edit</span>
-            <span class="material-symbols-outlined">close</span>
+            <span className="material-symbols-outlined">edit</span>
+            <span className="material-symbols-outlined">close</span>
           </div>
         </div>
       </div>
@@ -121,17 +121,17 @@ function Dashboard() {
           <div className="mode">
             <h1>complete project for the week</h1>
             <div className="priority-category">
-            <p className="category health">health</p>
-            <p className="priority low">low</p>
+              <p className="category health">health</p>
+              <p className="priority low">low</p>
             </div>
           </div>
           <div className="icons">
-             <span class="material-symbols-outlined">edit</span>
-            <span class="material-symbols-outlined">close</span>
+            <span className="material-symbols-outlined">edit</span>
+            <span className="material-symbols-outlined">close</span>
           </div>
         </div>
       </div>
-      
+
       <div className="tracker">
         <input type="range" name="range" id="tracker" min="0" max="100" value="50" />
       </div>
